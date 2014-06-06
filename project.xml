@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <meta title="HxdetExamples" package="com.example.hxdetexamples" version="1.0.0" company="Company Name"/>
+    <app main="Main" path="Export" file="HxdetExamples"/>
+
+    <source path="src"/>
+
+    <haxelib name="openfl"/>
+    <haxelib name="hxdet"/>
+
+
+    <window background="#303030"/>
+    <window antialiasing="4"/>
+
+    <section if="release">
+        <haxeflag name="--no-traces"/>
+    </section>
+    <section if="flash">
+        <haxeflag name="-D" value="advanced-telemetry"/>
+    </section>
+    <assets path="Assets" exclude="nme.svg|*.fla|*.swc|*.ai"/>
+    <icon path="Assets/nme.svg"/>
+    <template path="templates"/>
+
+    <assets path="Assets" exclude="openfl.svg"/>
+    <icon path="Assets/openfl.svg"/>
+
+</project>
